@@ -1,0 +1,19 @@
+student@systems-vm:~/Documents/arch1-lab1-tokenizer-UnstoppableCrown/src> make
+cc -g -O3   -c -o uimain.o uimain.c
+uimain.c: In function ‘main’:
+uimain.c:15:11: error: ‘input’ undeclared (first use in this function); did you mean ‘ino_t’?
+       if(*input == '0')
+           ^~~~~
+           ino_t
+uimain.c:15:11: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [<builtin>: uimain.o] Error 1
+student@systems-vm:~/Documents/arch1-lab1-tokenizer-UnstoppableCrown/src> make
+cc -g -O3   -c -o uimain.o uimain.c
+uimain.c: In function ‘main’:
+uimain.c:21:29: error: ‘input’ undeclared (first use in this function); did you mean ‘ino_t’?
+    char** tokens = tokenize(input);
+                             ^~~~~
+                             ino_t
+uimain.c:21:29: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [<builtin>: uimain.o] Error 1
+student@systems-vm:~/Documents/arch1-lab1-tokenizer-UnstoppableCrown/src> 
